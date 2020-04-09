@@ -9,7 +9,7 @@ import "./styles.scss";
 
 const App = () => {
   const [coinData, setCoinData] = useState([]);
-
+  
   useEffect(() => {
     axios
       .get(
@@ -21,7 +21,7 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
-      <Charts coinData={coinData} />
+      <Charts coinData={coinData}/>
     </div>
   );
 };
